@@ -1,7 +1,7 @@
 <?php
 // addons/HelloWorldBundle/Security/Permissions/HelloWorldPermissions.php
 
-namespace MauticPlugin\HelloworldBundle\Security\Permissions;
+namespace MauticPlugin\HelloWorldBundle\Security\Permissions;
 
 use Symfony\Component\Form\FormBuilderInterface;
 use Mautic\CoreBundle\Security\Permissions\AbstractPermissions;
@@ -31,7 +31,7 @@ class HelloWorldPermissions extends AbstractPermissions
                 'send_probe'    => 2,
                 'visit'         => 4,
                 // Full will almost always be included and should be significantly higher than the
-                // others in case new permissions need to be added later 
+                // others in case new permissions need to be added later
                 'full'          => 1024
             )
         );
@@ -83,7 +83,7 @@ class HelloWorldPermissions extends AbstractPermissions
 
     /**
      * Permission set identifier; should be bundleName
-     * 
+     *
      * @return string
      */
     public function getName()
